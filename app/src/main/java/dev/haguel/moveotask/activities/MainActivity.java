@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements OnSuccessListener
         tvUserWelcomeMsg = findViewById(R.id.tvUserWelcomeMsg);
         fabCreateNote = findViewById(R.id.fabCreateNote);
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
-        // Hanlde Clicks
+        // Handle Clicks
         fabCreateNote.setOnClickListener(v->{
             NoteActivity.startNotActivity(MainActivity.this, null);
         });
