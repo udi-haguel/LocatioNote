@@ -13,9 +13,8 @@
     <string name="back_to_login">Back to Login</string>
     <string name="reset_password">Reset Password</string>
     <string name="enter_your_email_to_reset_password">Enter your email to reset password</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="list_mode">List Mode</string>
     <string name="map_mode">Map Mode</string>
     <string name="create_new_note">Create new note</string>
+    <string name="ex_tomatoes_ncucumbers_nonions">Ex. Tomatoes\nCucumbers\nOnions</string>
 </resources>
