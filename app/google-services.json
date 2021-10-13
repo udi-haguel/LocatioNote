@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "637372412575",
+    "firebase_url": "https://moveotask-59125-default-rtdb.firebaseio.com",
+    "project_id": "moveotask-59125",
+    "storage_bucket": "moveotask-59125.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637372412575:android:487b2208d015953c6b68aa",
+        "android_client_info": {
+          "package_name": "dev.haguel.moveotask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637372412575-oept9jko8vd7gk2haedsdk2kp4469kjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAnPSdxYlba3Rcj8OJuVGOFr6JNPXzsSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637372412575-oept9jko8vd7gk2haedsdk2kp4469kjq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
