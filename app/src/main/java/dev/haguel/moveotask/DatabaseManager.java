@@ -32,6 +32,14 @@ public class DatabaseManager {
     }
     private DatabaseManager(){}
 
+    public NoteEntity getNoteById(String id) {
+        for (NoteEntity note : noteArrayList) {
+            if (String.valueOf(note.getCreated()).equals(id))
+                return note;
+        }
+        return null;
+    }
+
     // Interface
     public interface OnDataLoaded {
         public void onDataLoaded();
@@ -106,7 +114,7 @@ public class DatabaseManager {
     }
 
     private void notifyNotesListener(OnDataLoaded listener) {
-        if (listener != null && !hasLoadedOnce) {
+        if (listener != null) {
             listener.onDataLoaded();
         }
         hasLoadedOnce = true;
@@ -144,4 +152,7 @@ public class DatabaseManager {
         return noteArrayList;
     }
 
+    public boolean hasLoadedOnce() {
+        return hasLoadedOnce;
+    }
 }

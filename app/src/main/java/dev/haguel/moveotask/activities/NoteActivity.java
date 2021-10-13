@@ -77,18 +77,24 @@ public class NoteActivity extends AppCompatActivity implements OnSuccessListener
         // Loading Current Note
         if (getIntent().hasExtra(NOTE_INTENT_KEY) && getIntent().getSerializableExtra(NOTE_INTENT_KEY) != null) {
             note = (NoteEntity) getIntent().getSerializableExtra(NOTE_INTENT_KEY);
+            btnDelete.setEnabled(true);
             shouldAttachLocation = false;
         } else {
             note = new NoteEntity();
-            note.setCreated(System.currentTimeMillis());
-            note.setDate(note.getCreated());
+            btnDelete.setEnabled(false);
+            note.setDate(System.currentTimeMillis());
             shouldAttachLocation = true;
         }
 
 
         // Set Data To UI
         tvDate.setText(Utils.longToDateFormatter(note.getDate(), false));
-        tvDateCreated.setText(Utils.longToDateFormatter(note.getCreated(), true));
+
+        if (note.getCreated() == 0){
+            tvDateCreated.setText("-");
+        } else {
+            tvDateCreated.setText(Utils.longToDateFormatter(note.getCreated(), true));
+        }
         if (!TextUtils.isEmpty(note.getTitle())){
             etTitle.setText(note.getTitle());
         }
@@ -200,7 +206,12 @@ public class NoteActivity extends AppCompatActivity implements OnSuccessListener
             etTitle.requestFocus();
             return;
         }
-        note.setUpdate(System.currentTimeMillis());
+        if (note.getCreated() != 0) {
+            note.setUpdate(System.currentTimeMillis());
+        }
+        if (note.getCreated() == 0){
+            note.setCreated(System.currentTimeMillis());
+        }
         note.setTitle(etTitle.getText().toString());
         note.setBody(etBody.getText().toString().trim());
 

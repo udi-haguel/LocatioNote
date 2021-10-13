@@ -23,12 +23,14 @@
         android:focusable="true" />
 
 
-    <TextView
-        android:id="@+id/tvSignout"
+    <Button
+        android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:padding="8dp"
-        android:text="Signout"
+        android:text="Logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,10 +38,13 @@
         android:id="@+id/tvUserWelcomeMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:padding="8dp"
-        tools:text="Welcome"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_container"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Welcome" />
 
 
     <FrameLayout
@@ -47,10 +52,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_above="@id/bottom_navigation"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSignout" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -73,7 +79,7 @@
         android:layout_height="match_parent"
         android:background="#80000000"
         android:visibility="gone"
-        tools:visibility="visible"
+
         android:translationZ="10dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"

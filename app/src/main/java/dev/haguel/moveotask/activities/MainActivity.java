@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import com.google.android.gms.maps.model.LatLng;
@@ -26,7 +27,8 @@ public class MainActivity extends AppCompatActivity implements OnSuccessListener
 
     // UI
     private FloatingActionButton fabCreateNote;
-    private TextView tvSignout, tvUserWelcomeMsg;
+    private TextView tvUserWelcomeMsg;
+    private Button btnLogout;
     private FrameLayout flLoader;
     // DATA
     private LatLng latLng = new LatLng(-1, -1);
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements OnSuccessListener
 
         // Fetch Views
         flLoader = findViewById(R.id.flLoader);
-        tvSignout = findViewById(R.id.tvSignout);
+        btnLogout = findViewById(R.id.btnLogout);
         tvUserWelcomeMsg = findViewById(R.id.tvUserWelcomeMsg);
         fabCreateNote = findViewById(R.id.fabCreateNote);
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements OnSuccessListener
         fabCreateNote.setOnClickListener(v->{
             NoteActivity.startNotActivity(MainActivity.this, null);
         });
-        tvSignout.setOnClickListener(v->{
+        btnLogout.setOnClickListener(v->{
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(this, AuthActivity.class));
             finish();
@@ -94,13 +96,14 @@ public class MainActivity extends AppCompatActivity implements OnSuccessListener
         // Load Notes from db
         DatabaseManager.instance().loadNotesFromDBAsync(()->{
             try {
-                if (getSupportFragmentManager().findFragmentById(R.id.fragment_container) == null)
+                if (!DatabaseManager.instance().hasLoadedOnce() && getSupportFragmentManager().findFragmentById(R.id.fragment_container) == null)
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, NoteListFragment.newInstance()).commit();
             } catch (Exception e) {
                 e.printStackTrace();
             }
             toggleLoader(false);
         });
+
     }
 
 
