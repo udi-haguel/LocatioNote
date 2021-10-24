@@ -1,4 +1,4 @@
-package dev.haguel.moveotask;
+package dev.haguel.locationote;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package dev.haguel.moveotask.fragments.list_frag;
+package dev.haguel.locationote.fragments.list_frag;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
-import dev.haguel.moveotask.DatabaseManager;
-import dev.haguel.moveotask.R;
-import dev.haguel.moveotask.Utils;
-import dev.haguel.moveotask.activities.NoteActivity;
-import dev.haguel.moveotask.entities.NoteEntity;
+import dev.haguel.locationote.DatabaseManager;
+import dev.haguel.locationote.R;
+import dev.haguel.locationote.Utils;
+import dev.haguel.locationote.activities.NoteActivity;
+import dev.haguel.locationote.entities.NoteEntity;
 
 public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.NotesViewHolder> {
 

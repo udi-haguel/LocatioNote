@@ -1,4 +1,4 @@
-package dev.haguel.moveotask.fragments.maps_frag;
+package dev.haguel.locationote.fragments.maps_frag;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,10 +21,10 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.jetbrains.annotations.NotNull;
 
-import dev.haguel.moveotask.DatabaseManager;
-import dev.haguel.moveotask.R;
-import dev.haguel.moveotask.activities.NoteActivity;
-import dev.haguel.moveotask.entities.NoteEntity;
+import dev.haguel.locationote.DatabaseManager;
+import dev.haguel.locationote.R;
+import dev.haguel.locationote.activities.NoteActivity;
+import dev.haguel.locationote.entities.NoteEntity;
 
 public class MapsFragment extends Fragment implements GoogleMap.OnMarkerClickListener {
 

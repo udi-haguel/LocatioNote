@@ -1,4 +1,4 @@
-package dev.haguel.moveotask.activities;
+package dev.haguel.locationote.activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,11 +22,11 @@ import android.widget.TextView;
 import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.gms.tasks.OnSuccessListener;
 import java.util.Calendar;
-import dev.haguel.moveotask.Utils;
-import dev.haguel.moveotask.DatabaseManager;
-import dev.haguel.moveotask.LocationAndPermissionManager;
-import dev.haguel.moveotask.R;
-import dev.haguel.moveotask.entities.NoteEntity;
+import dev.haguel.locationote.Utils;
+import dev.haguel.locationote.DatabaseManager;
+import dev.haguel.locationote.LocationAndPermissionManager;
+import dev.haguel.locationote.R;
+import dev.haguel.locationote.entities.NoteEntity;
 
 public class NoteActivity extends AppCompatActivity implements OnSuccessListener<Location>, View.OnClickListener {
 

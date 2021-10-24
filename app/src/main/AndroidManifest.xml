@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.haguel.moveotask">
+    package="dev.haguel.locationote">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -18,15 +18,15 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key"/>
 
-        <activity android:name=".activities.MainActivity">
+        <activity android:name="dev.haguel.locationote.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.NoteActivity"/>
-        <activity android:name=".activities.AuthActivity" />
+        <activity android:name="dev.haguel.locationote.activities.NoteActivity"/>
+        <activity android:name="dev.haguel.locationote.activities.AuthActivity" />
 
     </application>
 

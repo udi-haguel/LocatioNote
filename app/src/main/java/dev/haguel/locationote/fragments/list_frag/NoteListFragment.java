@@ -1,4 +1,4 @@
-package dev.haguel.moveotask.fragments.list_frag;
+package dev.haguel.locationote.fragments.list_frag;
 
 import android.os.Bundle;
 
@@ -13,8 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.airbnb.lottie.LottieAnimationView;
-import dev.haguel.moveotask.DatabaseManager;
-import dev.haguel.moveotask.R;
+import dev.haguel.locationote.DatabaseManager;
+import dev.haguel.locationote.R;
 
 public class NoteListFragment extends Fragment {
 

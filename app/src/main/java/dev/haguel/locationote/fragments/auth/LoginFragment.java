@@ -1,4 +1,4 @@
-package dev.haguel.moveotask.fragments.auth;
+package dev.haguel.locationote.fragments.auth;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,8 +20,8 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-import dev.haguel.moveotask.R;
-import dev.haguel.moveotask.activities.MainActivity;
+import dev.haguel.locationote.R;
+import dev.haguel.locationote.activities.MainActivity;
 
 
 public class LoginFragment extends Fragment {

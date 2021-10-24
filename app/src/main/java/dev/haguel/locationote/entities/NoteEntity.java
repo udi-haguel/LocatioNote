@@ -1,9 +1,6 @@
-package dev.haguel.moveotask.entities;
+package dev.haguel.locationote.entities;
 
 import java.io.Serializable;
-import java.sql.Time;
-import java.util.Calendar;
-import java.util.Date;
 
 public class NoteEntity implements Serializable {
 

@@ -1,4 +1,4 @@
-package dev.haguel.moveotask;
+package dev.haguel.locationote;
 
 import androidx.annotation.NonNull;
 
@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import dev.haguel.moveotask.entities.NoteEntity;
-import dev.haguel.moveotask.entities.UserEntity;
+import dev.haguel.locationote.entities.NoteEntity;
+import dev.haguel.locationote.entities.UserEntity;
 
 public class DatabaseManager {
 

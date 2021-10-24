@@ -1,4 +1,4 @@
-package dev.haguel.moveotask.entities;
+package dev.haguel.locationote.entities;
 
 public class UserEntity {
     private String fullName;

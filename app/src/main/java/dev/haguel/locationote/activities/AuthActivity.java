@@ -1,4 +1,4 @@
-package dev.haguel.moveotask.activities;
+package dev.haguel.locationote.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
@@ -6,8 +6,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 
 
-import dev.haguel.moveotask.fragments.auth.LoginFragment;
-import dev.haguel.moveotask.R;
+import dev.haguel.locationote.fragments.auth.LoginFragment;
+import dev.haguel.locationote.R;
 
 public class AuthActivity extends AppCompatActivity {
 

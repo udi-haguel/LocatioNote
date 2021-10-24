@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MoveoTask</string>
+    <string name="app_name">Locationote - Location base Notes app</string>
     <string name="register">Register</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="login">Login</string>

@@ -1,4 +1,4 @@
-package dev.haguel.moveotask.activities;
+package dev.haguel.locationote.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,11 +16,11 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
-import dev.haguel.moveotask.DatabaseManager;
-import dev.haguel.moveotask.LocationAndPermissionManager;
-import dev.haguel.moveotask.R;
-import dev.haguel.moveotask.fragments.list_frag.NoteListFragment;
-import dev.haguel.moveotask.fragments.maps_frag.MapsFragment;
+import dev.haguel.locationote.DatabaseManager;
+import dev.haguel.locationote.LocationAndPermissionManager;
+import dev.haguel.locationote.R;
+import dev.haguel.locationote.fragments.list_frag.NoteListFragment;
+import dev.haguel.locationote.fragments.maps_frag.MapsFragment;
 
 
 public class MainActivity extends AppCompatActivity implements OnSuccessListener<Location> {

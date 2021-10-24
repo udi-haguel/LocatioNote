@@ -1,4 +1,4 @@
-package dev.haguel.moveotask.fragments.auth;
+package dev.haguel.locationote.fragments.auth;
 
 import android.os.Bundle;
 
@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 
-import dev.haguel.moveotask.R;
+import dev.haguel.locationote.R;
 
 public class ForgotPasswordFragment extends Fragment {
 
